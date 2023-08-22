@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+:root {
+    --color-main: cadetblue;
+    --color-second: lightcyan;
+}
+
+main {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+background-color: var(--color-second);
+}
+
+header{
+    background-image: url(./assets/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 10em;
+    margin: none;
+    
+    
+}
+ 
+.navclass {
+    display: flex;
+    background-color: cadetblue;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  
+.navclass a {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10%;
+    border: none;
+    text-decoration: none;
+    justify-content: space-between;
+
+  }
+
+
+h2 {
+    margin-bottom: 1em;
+    background-color: var(--color-main);
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-top: .15em;
+}
+ 
+h3 {
+    font-size: 12px;
+}
+
+a {
+    border: solid;
+    border-radius: 15%;
+    font-size: smaller;
+    margin: 5px;
+
+}
+
+.cardimg {
+    width: 15em;
+    border-radius: 15%;
+}
+
+.card {
+    background-color: var(--color-main);
+    border-radius: 15%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+    margin-right: 4em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.schedulediv {
+margin-right: 4px;
+display: flex;
+flex-direction: column;
+margin-bottom: 40vh;
+}
+
+footer {
+    background-color: var(--color-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+
+#pagefooter {
+    text-decoration: none;
+    border: none;
+}
+
+form a {
+    background-color: var(--color-main); 
+    font-size: 10px;
+}
+
+#fsubbutton {
+    background-color: var(--color-main);
+    border: solid black .5px;
+}
+span {
+    border-style: none;
+}
+
+table, th, td {
+    border: 3px solid white;
+    border-collapse: collapse;
+    padding: .8em;
+    margin-top: 4em;
+  }
+
+  .listandtable {
+    background-color: var(--color-main);
+    border-radius: 15%;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+ul, li {
+    padding-top: 1em;
+}
+
+/* Media Query for screens with width between 320px and 767px (mobile) */
+@media (min-width: 320px) and (max-width: 767px) {
+    .navclass {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navclass a {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    .cardsdiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80vw;
+        height: auto;
+        margin: 10px 0;
+    }
+    h2 {
+        padding: 1em;
+        font-size: 16px;
+    }
+    .schedulediv {
+        margin-bottom: 20px;
+    }
+}
+
+/* Media Query for screens with width between 766px and 1023px (tablet) */
+@media (min-width: 766px) and (max-width: 1023px) {
+    .navclass {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .navclass a {
+        margin: 0;
+        font-size: 14px;
+    }
+    .cardsdiv {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 30%;
+        height: auto;
+        margin: 10px 0;
+    }
+    h2 {
+        padding: 1em;
+        font-size: 20px;
+    }
+    .listandtable {
+        height: auto;
+        margin-top: 20px;
+    }
+    ul, li {
+        padding-top: 0.5em;
+    }
+}
+
+
+
